@@ -24,7 +24,7 @@
 	"packs": [],
 	"url": "https://github.com/benwater12/breaktimechi",
 	"download": "https://github.com/benwater12/breaktimechi/archive/1.0.4.zip",
-	"manifest": "https://raw.githubusercontent.com/benwater12/breaktimechi/master/module.json",
+	"manifest": "https://raw.githubusercontent.com/benwater12/breaktimechi/main/module.json",
 	"minimumCoreVersion": "0.7.1",
 	"compatibleCoreVersion": "0.7.9"
 }
