@@ -34,7 +34,7 @@ class BreakTime {
     static pause() {
         //if this is the GM and shift is being held down, then start a break time
         if (game.paused) {
-            if (game.user.isGM && game.keyboard.isDown("Shift")) {
+            if (game.user.isGM && game.keyboard.isDown("16")) {
                 game.socket.emit(
                     BreakTime.SOCKET,
                     {
