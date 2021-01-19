@@ -111,8 +111,10 @@ class BreakTime {
         //send message declaring if you're back
         if (userId == game.user._id) {
             const isaway = BreakTime.awayUsers.has(userId);
+            let messageleave= "<h1>"+game.user.name+"需要暫離，等我一下</h1>";
+            let messagearrive="<h1>"+game.user.name+"回來啦!</h1>";
             const messageData = {
-                content: (isaway ? TextEditor.decodeHTML('<h1>需要暫離，等我一下</h1>') : TextEditor.decodeHTML('<h1>我回來啦!</h1>'))
+                content: (isaway ? TextEditor.decodeHTML(messageleave) : TextEditor.decodeHTML(messagearrive))
             };
             ChatMessage.create(messageData);
 
