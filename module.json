@@ -1,9 +1,9 @@
 {
 	"name": "breaktime",
 	"title": "Break Time",
-	"description": "Foundry VTT module to track when players have returned from break",
-	"version": "1.0.4",
-	"author": "Michael Weisner",
+	"description": "a chinese adaptation from Breaktime(https://foundryvtt.com/packages/breaktime/)",
+	"version": "1.0.4chi",
+	"author": "Benson Weng",
 	"socket": true,
 	"languages": [
 		{
