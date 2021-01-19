@@ -111,10 +111,6 @@ class BreakTime {
         //send message declaring if you're back
         if (userId == game.user._id) {
             const isaway = BreakTime.awayUsers.has(userId);
-            const url = args[0];
-            const push = args[1];
-            AudioHelper.play({src: ["https://assets.forge-vtt.com/5ffd1ed411fad728bfd1a267/(27s%20-%2030s)%20lobotomy%20corp-Blue%20star%27s%20bgm%20and%20attack%20sound.mp3"]}, push);
-
             const messageData = {
                 content: (isaway ? TextEditor.decodeHTML('<h1>需要暫離，等我一下</h1>') : TextEditor.decodeHTML('<h1>我回來啦!</h1>'))
             };
