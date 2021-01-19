@@ -113,7 +113,7 @@ class BreakTime {
             const isaway = BreakTime.awayUsers.has(userId);
 
             const messageData = {
-                content: (isaway ? "I'm stepping away for a second." : "I'm back.")
+                content: (isaway ? TextEditor.decodeHTML('<h1>需要暫離，等我一下</h1>') : TextEditor.decodeHTML('<h1>我回來啦!</h1>'))
             };
             ChatMessage.create(messageData);
 
