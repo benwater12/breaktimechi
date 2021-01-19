@@ -2,7 +2,7 @@
 	"name": "breaktime",
 	"title": "Break Time",
 	"description": "a chinese adaptation from Breaktime(https://foundryvtt.com/packages/breaktime/)",
-	"version": "1.0.4chi",
+	"version": "1.0.5chi",
 	"author": "Benson Weng",
 	"socket": true,
 	"languages": [
