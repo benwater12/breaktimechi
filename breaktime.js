@@ -112,6 +112,9 @@ class BreakTime {
         if (userId == game.user._id) {
             AudioHelper.play({src: ["https://assets.forge-vtt.com/5ffd1ed411fad728bfd1a267/(27s%20-%2030s)%20lobotomy%20corp-Blue%20star%27s%20bgm%20and%20attack%20sound.mp3"]}, true);
             const isaway = BreakTime.awayUsers.has(userId);
+            if(isaway){AudioHelper.play({src: ["https://assets.forge-vtt.com/5ffd1ed411fad728bfd1a267/(27s%20-%2030s)%20lobotomy%20corp-Blue%20star%27s%20bgm%20and%20attack%20sound.mp3"]}, true) ;}
+            else{AudioHelper.play({src: ["https://assets.forge-vtt.com/5ffd1ed411fad728bfd1a267/Among%20Us%20(Emergency%20Meeting)%20-%20Sound%20Effect%20(HD).mp3"]}, true) ;}
+            
             let messageleave= "<h1>"+game.user.name+"需要暫離，等我一下</h1>";
             let messagearrive="<h1>"+game.user.name+"回來啦!</h1>";
             const messageData = {
